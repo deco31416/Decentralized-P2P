@@ -1,0 +1,132 @@
+##################################################
+# DEPENDENCIES
+##################################################
+node_modules/
+.pnp/
+.pnp.js
+.npm/
+.yarn/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+pnpm-lock.yaml
+
+##################################################
+# BUILD & OUTPUTS
+##################################################
+dist/
+build/
+out/
+.cache/
+.tmp/
+temp/
+*.tsbuildinfo
+
+##################################################
+# HARDHAT / FOUNDRY / WEB3
+##################################################
+# Hardhat
+cache/
+artifacts/
+typechain-types/
+ignition/deployments/chain-*/
+
+# Foundry (si usas)
+broadcast/
+cache_forge/
+out/
+
+# OpenZeppelin upgrades
+.openzeppelin/*.json
+!.openzeppelin/unknown-*.json
+
+# Deployment artifacts
+deployments/
+!deployments/.gitkeep
+scripts/deployed-*.json
+scripts/addresses-*.json
+
+# Tenderly
+.tenderly/
+
+##################################################
+# TESTING & COVERAGE
+##################################################
+coverage/
+coverage.json
+.coverage_artifacts/
+.coverage_cache/
+.nyc_output/
+.test_results/
+test-results.xml
+
+##################################################
+# ENV & SECRETS (CRÍTICO)
+##################################################
+.env
+.env.local
+.env.*.local
+.env.*.secret
+
+# Keys & wallets - NEVER COMMIT
+*.key
+*.pem
+*.p12
+*.pfx
+private-keys.txt
+mnemonic.txt
+secrets.json
+
+##################################################
+# LOGS
+##################################################
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+##################################################
+# IDE & EDITORS
+##################################################
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.history/
+
+##################################################
+# OS FILES
+##################################################
+.DS_Store
+Thumbs.db
+desktop.ini
+
+##################################################
+# ARCHIVES & MISC
+##################################################
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.rar
+
+##################################################
+# GAS REPORTS
+##################################################
+gas-report.txt
+
+##################################################
+# LOCK FILES (COMMITEAR EL QUE USES)
+##################################################
+# ✅ npm: Commitear package-lock.json (ES LO QUE USAS)
+# ❌ Solo ignorar los otros gestores
+
+# package-lock.json  # NO IGNORAR - Lo necesitas commiteado
+yarn.lock            # Ignorar (no usas yarn)
+pnpm-lock.yaml       # Ignorar (no usas pnpm)

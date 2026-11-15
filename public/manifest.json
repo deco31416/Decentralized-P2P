@@ -1,0 +1,23 @@
+{
+    "name": "CambiaCripto P2P Exchange",
+    "short_name": "CambiaCripto",
+    "description": "Plataforma segura de intercambio P2P de criptomonedas",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#020817",
+    "theme_color": "#8b5cf6",
+    "icons": [
+        {
+            "src": "/images/logos/pwa-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/images/logos/pwa-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+# Environment files and secrets
+.env*
+!.env.example
+**/.env.example
+
+# Private keys, wallets, certificates, and credential exports
+*.key
+*.pem
+*.p12
+*.pfx
+*.keystore
+private-keys.txt
+mnemonic.txt
+secrets.json
+wallet.json
+credentials*.json
+
+# Dependencies and generated output
+node_modules/
+.pnp/
+.pnp.js
+.pnpm-store/
+.next/
+.next/cache/
+dist/
+build/
+out/
+coverage/
+artifacts/
+cache/
+typechain-types/
+.vercel/
+
+# Hardhat, Foundry, and deployment output
+contratos/node_modules/
+contratos/cache/
+contratos/artifacts/
+contratos/coverage/
+contratos/.openzeppelin/
+contratos/deployments/
+contratos/broadcast/
+.openzeppelin/
+broadcast/
+*.tsbuildinfo
+
+# Logs, databases, dumps, and backups
+logs/
+*.log
+*.sqlite
+*.sqlite3
+*.db
+*.sql
+*.dump
+*.backup
+*.bak
+backup/
+backups/
+
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# Lockfiles are tracked per package manager.
+# The web app uses pnpm; the contracts package uses npm.
+/package-lock.json
+/yarn.lock
+

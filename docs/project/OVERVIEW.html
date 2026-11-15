@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ficha conceptual de CambiaCripto, un proyecto abierto en desarrollo para explorar interfaces P2P y contratos Web3." />
+    <title>CambiaCripto — Ficha conceptual</title>
+    <style>
+      :root { color-scheme: dark; --bg:#0c1015; --panel:#141b23; --line:#263342; --text:#eef4f8; --muted:#a8b5c1; --accent:#79e2c0; --warn:#ffcf70; }
+      * { box-sizing:border-box; }
+      body { margin:0; background:radial-gradient(ellipse at 12% 0%,#18322f 0,transparent 34rem),var(--bg); color:var(--text); font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; }
+      main { width:min(1040px,calc(100% - 36px)); margin:0 auto; padding:56px 0 80px; }
+      a { color:var(--accent); }
+      .eyebrow { color:var(--accent); text-transform:uppercase; letter-spacing:.16em; font-size:.76rem; font-weight:700; }
+      h1 { margin:.35rem 0 1rem; font-size:clamp(2.6rem,7vw,5.5rem); line-height:1.02; letter-spacing:-.055em; }
+      h2 { margin:0 0 .65rem; font-size:1.35rem; }
+      p { color:var(--muted); }
+      .lead { max-width:740px; font-size:1.22rem; }
+      .notice { margin:28px 0 38px; padding:18px 20px; border:1px solid #705c2b; border-radius:14px; background:#302817; color:#ffe8b2; }
+      .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin:28px 0; }
+      .card { padding:22px; border:1px solid var(--line); border-radius:16px; background:linear-gradient(145deg,#17212a,var(--panel)); }
+      .card p { margin-bottom:0; }
+      .label { display:inline-block; margin:3px 5px 3px 0; padding:4px 9px; border:1px solid var(--line); border-radius:999px; color:var(--muted); font-size:.82rem; }
+      .steps { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin:22px 0 32px; }
+      .step { padding:18px; border-top:2px solid var(--accent); background:#111920; }
+      .step b { display:block; margin-bottom:6px; }
+      footer { margin-top:42px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+      @media(max-width:700px){.grid,.steps{grid-template-columns:1fr} main{padding-top:34px}}
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="eyebrow">Documento conceptual · código abierto</div>
+      <h1>CambiaCripto</h1>
+      <p class="lead">Un proyecto en desarrollo para explorar cómo una interfaz web y contratos inteligentes podrían apoyar experiencias de intercambio entre pares de activos digitales y fiat.</p>
+
+      <aside class="notice"><strong>Estado y límites.</strong> Esta página describe la intención del proyecto, no un servicio financiero disponible. La presencia de interfaces o contratos fuente no acredita que los flujos funcionen, que exista un despliegue activo, que el sistema esté auditado o que sea seguro para fondos reales.</aside>
+
+      <section class="grid" aria-label="Resumen del proyecto">
+        <article class="card"><h2>Qué hay en el repositorio</h2><p>Una aplicación web con Next.js, React y TypeScript; utilidades de integración Web3; y fuentes Solidity organizadas por módulos con configuración de Hardhat.</p></article>
+        <article class="card"><h2>Qué explora</h2><p>Rutas de interfaz para dashboard, depósitos, retiros, staking, IDO y distintas vistas P2P, junto a contratos organizados para exchange, escrow, gestión y funciones adicionales.</p></article>
+        <article class="card"><h2>Qué no se afirma</h2><p>No se afirma soporte multi-chain operativo, liquidación fiat en cadena, custodia segura, auditoría independiente, volumen, usuarios, contratos desplegados ni disponibilidad de producción.</p></article>
+        <article class="card"><h2>Responsable</h2><p>Mantenedor indicado por el proyecto: <strong>deoc31416</strong>. La licencia del repositorio es MIT; consulta el archivo LICENSE.txt para sus términos.</p></article>
+      </section>
+
+      <section>
+        <h2>Capas técnicas observadas</h2>
+        <p><span class="label">Next.js App Router</span><span class="label">React 18</span><span class="label">TypeScript</span><span class="label">Thirdweb</span><span class="label">ethers</span><span class="label">Solidity 0.8.20</span><span class="label">Hardhat</span></p>
+        <p>La configuración de contratos declara redes locales y BSC testnet/mainnet. Esto solo describe configuración; no confirma despliegues. Para rutas reales y módulos fuente, consulta la documentación enlazada abajo.</p>
+      </section>
+
+      <section>
+        <h2>Camino hacia una versión verificable</h2>
+        <div class="steps">
+          <div class="step"><b>1 · Inventariar</b><span>Documentar cada ruta, datos, integraciones, permisos y dependencias.</span></div>
+          <div class="step"><b>2 · Verificar</b><span>Añadir pruebas reproducibles para aplicación y contratos; probar solo en entornos controlados.</span></div>
+          <div class="step"><b>3 · Revisar</b><span>Completar modelo de amenazas, revisión independiente y runbook antes de considerar cualquier despliegue real.</span></div>
+        </div>
+        <p>Cada etapa requiere evidencia publicada. Una pantalla presente, una compilación o un documento de diseño no bastan para marcar una función como lista.</p>
+      </section>
+
+      <section class="card">
+        <h2>Documentación del repositorio</h2>
+        <ul>
+          <li><a href="../../README.md">README principal</a></li>
+          <li><a href="STATUS.md">Estado del proyecto y límites conocidos</a></li>
+          <li><a href="ROUTES.md">Matriz de rutas</a></li>
+          <li><a href="../contracts/CATALOG.md">Inventario de contratos Solidity</a></li>
+          <li><a href="../../contratos/README.md">README de contratos</a></li>
+          <li><a href="../security/POLICY.md">Guía de seguridad</a></li>
+        </ul>
+      </section>
+
+      <footer>Ficha conceptual mantenida junto al código. Revisión estática del árbol: 14 de noviembre de 2026. No es asesoramiento financiero ni una auditoría de seguridad.</footer>
+    </main>
+  </body>
+</html>
+

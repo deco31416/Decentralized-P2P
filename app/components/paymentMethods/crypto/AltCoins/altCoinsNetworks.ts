@@ -1,0 +1,45 @@
+// components/paymentMethods/crypto/altCoinsNetworks.ts
+import { ecosystemCoinNetworks } from "../ecosystemCoinNetworks";
+
+export const altCoinsNetworks = {
+  usdt: [
+    ecosystemCoinNetworks.mainnets.ethereum,
+    ecosystemCoinNetworks.mainnets.binance,
+    ecosystemCoinNetworks.mainnets.tron,
+    ecosystemCoinNetworks.mainnets.polygon,
+    ecosystemCoinNetworks.mainnets.solana,
+  ],
+  btc: [
+    ecosystemCoinNetworks.mainnets.ethereum,
+    ecosystemCoinNetworks.mainnets.binance,
+  ],
+  eth: [ecosystemCoinNetworks.mainnets.ethereum],
+  bnb: [ecosystemCoinNetworks.mainnets.binance],
+  trx: [ecosystemCoinNetworks.mainnets.tron],
+  matic: [ecosystemCoinNetworks.mainnets.polygon],
+  dot: [ecosystemCoinNetworks.mainnets.polkadot],
+  sol: [ecosystemCoinNetworks.mainnets.solana],
+  wld: [ecosystemCoinNetworks.mainnets.worldchain],
+  cake: [ecosystemCoinNetworks.mainnets.binance],
+  wbtc: [
+    ecosystemCoinNetworks.mainnets.binance,
+    ecosystemCoinNetworks.mainnets.ethereum,
+  ],
+  pepe: [ecosystemCoinNetworks.mainnets.ethereum],
+  uni: [ecosystemCoinNetworks.mainnets.ethereum],
+  link: [ecosystemCoinNetworks.mainnets.ethereum],
+  shib: [ecosystemCoinNetworks.mainnets.ethereum],
+  floki: [ecosystemCoinNetworks.mainnets.ethereum],
+  ape: [ecosystemCoinNetworks.mainnets.ethereum],
+  sushi: [ecosystemCoinNetworks.mainnets.ethereum],
+  crv: [ecosystemCoinNetworks.mainnets.ethereum],
+  aave: [ecosystemCoinNetworks.mainnets.ethereum],
+  hny: [ecosystemCoinNetworks.mainnets.ethereum],
+  now: [ecosystemCoinNetworks.mainnets.ethereum],
+  jst: [ecosystemCoinNetworks.mainnets.tron],
+  quick: [ecosystemCoinNetworks.mainnets.polygon],
+  chainlink: [ecosystemCoinNetworks.mainnets.solana],
+  ray: [ecosystemCoinNetworks.mainnets.solana],
+  hype: [ecosystemCoinNetworks.mainnets.optimism],
+  glmr: [ecosystemCoinNetworks.mainnets.polkadot],
+};
